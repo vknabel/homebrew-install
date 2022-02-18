@@ -5,21 +5,21 @@
 class Localice < Formula
   desc ""
   homepage ""
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vknabel/localice/releases/download/v0.0.3/localice_0.0.3_Darwin_arm64.tar.gz"
-      sha256 "eaabdcf76d18e08dc6e6d0d7ec2efb8a2b5b28335ed27273f32435be2390075f"
+      url "https://github.com/vknabel/localice/releases/download/v0.0.4/localice_0.0.4_Darwin_arm64.tar.gz"
+      sha256 "884e824241373d5e2df8411097f56d2daca1f6f10ecf0748822b295ff5bbd205"
 
       def install
         bin.install "localice"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vknabel/localice/releases/download/v0.0.3/localice_0.0.3_Darwin_x86_64.tar.gz"
-      sha256 "0ea71158afefe42dc22b44f13c95de5835b42630210e6b6a344c6d495c5ddacc"
+      url "https://github.com/vknabel/localice/releases/download/v0.0.4/localice_0.0.4_Darwin_x86_64.tar.gz"
+      sha256 "4e6feec9e81a7fe7c57da62d59e7957bdfe9dddf4a67f6c8587c00fad37a4f24"
 
       def install
         bin.install "localice"
@@ -29,16 +29,16 @@ class Localice < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vknabel/localice/releases/download/v0.0.3/localice_0.0.3_Linux_arm64.tar.gz"
-      sha256 "a61d0da431c05483970bec6ddb7caf0f269154dd37098c7294be69847362a557"
+      url "https://github.com/vknabel/localice/releases/download/v0.0.4/localice_0.0.4_Linux_arm64.tar.gz"
+      sha256 "9b682127492657da6905a5e5b18a3723b29919d00a4ddff161999cc0f4b89d9c"
 
       def install
         bin.install "localice"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vknabel/localice/releases/download/v0.0.3/localice_0.0.3_Linux_x86_64.tar.gz"
-      sha256 "0f7dbe77d62765ab71651b67effbe15ae6e64c3dac44af940a694422156cdae0"
+      url "https://github.com/vknabel/localice/releases/download/v0.0.4/localice_0.0.4_Linux_x86_64.tar.gz"
+      sha256 "f5a32f552067a73906a788338181768aa4d8f832fd218de8a76c2c3ee784375a"
 
       def install
         bin.install "localice"
