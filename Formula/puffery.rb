@@ -11,7 +11,7 @@ class Puffery < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/vknabel/go-puffery/releases/download/v0.1.0/go-puffery_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "a3e3af989a4db15bc31c12025ef33f6765a33b7d42556ace93f2a30870ff2920"
+      sha256 "8e33c500e0c70630f31d830dafde892eb6216044bbeeec9bf2eca455c28aa1fd"
 
       def install
         bin.install "puffery"
@@ -19,7 +19,7 @@ class Puffery < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/vknabel/go-puffery/releases/download/v0.1.0/go-puffery_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "e693d9bb52e6856880fc25f2ab3024782944cea4377b27cf117b61f2d3ba61b5"
+      sha256 "ba19f12b73cae812a280db579120b6c7c8217e28bf4f60862d9ea1f5dd8b781c"
 
       def install
         bin.install "puffery"
@@ -30,7 +30,7 @@ class Puffery < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/vknabel/go-puffery/releases/download/v0.1.0/go-puffery_0.1.0_Linux_arm64.tar.gz"
-      sha256 "3ab22886d1de422bc11ce4e6294917883a99516388a31b3fa1b5c56b5adaca9b"
+      sha256 "5001bbe2f4d231eebc92649f9e68b233000d1b181aa4c41b92c0b2ae60df1bab"
 
       def install
         bin.install "puffery"
@@ -38,7 +38,7 @@ class Puffery < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/vknabel/go-puffery/releases/download/v0.1.0/go-puffery_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "4cc8c6fa377cede8ad7b182a8aad1088cfc566fe54f432c86be125f1febe4e4a"
+      sha256 "d8b0ae1f0c007b0a49dfcf9fb15c9a0f859f256bd8f16b64403c4fac8a75bac6"
 
       def install
         bin.install "puffery"
