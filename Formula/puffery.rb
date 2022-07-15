@@ -5,21 +5,21 @@
 class Puffery < Formula
   desc ""
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vknabel/go-puffery/releases/download/v0.1.0/go-puffery_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "8e33c500e0c70630f31d830dafde892eb6216044bbeeec9bf2eca455c28aa1fd"
+      url "https://github.com/vknabel/go-puffery/releases/download/v0.1.1/go-puffery_0.1.1_Darwin_arm64.tar.gz"
+      sha256 "f98623a541d2ea929b265d458a3c44f61d1661386c6407ab4792b3a42fbf2835"
 
       def install
         bin.install "puffery"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vknabel/go-puffery/releases/download/v0.1.0/go-puffery_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "ba19f12b73cae812a280db579120b6c7c8217e28bf4f60862d9ea1f5dd8b781c"
+      url "https://github.com/vknabel/go-puffery/releases/download/v0.1.1/go-puffery_0.1.1_Darwin_x86_64.tar.gz"
+      sha256 "3b105beb91acbbfb4d89d5f1904de453f3fc39c092807dcea7d2403c27cbdfa2"
 
       def install
         bin.install "puffery"
@@ -29,16 +29,16 @@ class Puffery < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vknabel/go-puffery/releases/download/v0.1.0/go-puffery_0.1.0_Linux_arm64.tar.gz"
-      sha256 "5001bbe2f4d231eebc92649f9e68b233000d1b181aa4c41b92c0b2ae60df1bab"
+      url "https://github.com/vknabel/go-puffery/releases/download/v0.1.1/go-puffery_0.1.1_Linux_arm64.tar.gz"
+      sha256 "37ff7273e24f35ea931f4d164679e197600c18feb13b340b9a76f6791d085167"
 
       def install
         bin.install "puffery"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/vknabel/go-puffery/releases/download/v0.1.0/go-puffery_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "d8b0ae1f0c007b0a49dfcf9fb15c9a0f859f256bd8f16b64403c4fac8a75bac6"
+      url "https://github.com/vknabel/go-puffery/releases/download/v0.1.1/go-puffery_0.1.1_Linux_x86_64.tar.gz"
+      sha256 "a211f9fb1589d4f0212d1208c5d885323dded79a93523a47fb36810bed93b522"
 
       def install
         bin.install "puffery"
